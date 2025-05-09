@@ -1,0 +1,106 @@
+type: collection.insomnia.rest/5.0
+name: REQUESTS
+meta:
+  id: wrk_67e5e2cd5f1a4c4898754c4dc2747e39
+  created: 1746059838511
+  modified: 1746828443398
+collection:
+  - url: http://localhost:5000/auth/users
+    name: GET ALL USERS
+    meta:
+      id: req_7a62decd3cf54af4b337cfbfc8c8f7ba
+      created: 1746059848887
+      modified: 1746828419251
+      isPrivate: false
+      sortKey: -1746059848888
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+        id: pair_aca595c8eec24002b11f0900dd6107fd
+      - id: pair_c415a89d2b1a47e2bd8124d9bbb1d0ae
+        name: authorization
+        value: bearer
+          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWM5NzkzZjk3YmJkY2Y2MTBlYWNlZSIsInJvbGVzIjpbIkFETUlOIl0sImlhdCI6MTc0Njc0NDkxMiwiZXhwIjoxNzQ2ODMxMzEyfQ.Sk7J4v6QOJndmHgxJyTQAw0tzyN9A8_ooQCGCJttVSI
+        disabled: false
+      - id: pair_7df992891c7945f6a15b0a2782e75311
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:5000/auth/reg
+    name: reg
+    meta:
+      id: req_42a254f5e87341b19afe127981bb16f0
+      created: 1746061125474
+      modified: 1746704273178
+      isPrivate: false
+      sortKey: -1745582723764.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username":"admin",
+        	"password":"admin"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:5000/auth/login
+    name: log
+    meta:
+      id: req_9f092c891f134f9c8309369c2de1e2e6
+      created: 1746703457982
+      modified: 1746744910591
+      isPrivate: false
+      sortKey: -1745344161202.75
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username":"admin",
+        	"password":"admin"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_21ca38700116de52dda24006c82aba6c1c0a1575
+    created: 1746059838518
+    modified: 1746059838518
+environments:
+  name: Base Environment
+  meta:
+    id: env_21ca38700116de52dda24006c82aba6c1c0a1575
+    created: 1746059838515
+    modified: 1746059838515
+    isPrivate: false
